@@ -1,0 +1,9 @@
+.link-custom {
+    text-decoration: none;
+    color: #ddd;
+    transition: color 0.2s ease;
+}
+
+.link-custom:hover {
+    color: #fff; /* Change this to the color you want on hover */
+}

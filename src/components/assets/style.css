@@ -1,0 +1,69 @@
+/* General styles */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-image: url("/public/bgg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Ensure the background covers the entire viewport */
+}
+
+
+.cardb {
+  position: relative;
+  z-index: 1; /* Ensure text is above the blurred background */
+  padding: 0.75rem;
+  border-radius: 1rem;
+  transition: transform 0.2s ease; /* Transition for scaling */
+}
+
+.cardb:hover {
+  backdrop-filter: blur(0px);
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+
+
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+  .card-bg img {
+    height: 200px; /* Adjust height for smaller screens */
+  }
+  
+.card-bg img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+}
+
+@media (min-width: 992px) {
+  .card-bg img {
+    height: 300px; /* Adjust height for larger screens */
+  }
+}
+
+/* Additional styles */
+
+.container {
+  max-width: 1200px; /* Example max-width for the container */
+  margin: 0 auto; /* Center align container */
+}
+
+.my-5 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
