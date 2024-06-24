@@ -11,9 +11,7 @@ const InsightsGallery = ({ insights }) => {
     setExpandedCardIndex(index === expandedCardIndex ? null : index);
     setSelectedCard(insights[index]); // Set selected card data
   };
-  const  handler =(index) =>{
 
-  }
 
   return (
     <Container className="my-5">

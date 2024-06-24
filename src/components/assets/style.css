@@ -1,5 +1,7 @@
 /* General styles */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Roboto:wght@300;400&display=swap');
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -21,11 +23,12 @@ body {
   padding: 0.75rem;
   border-radius: 1rem;
   transition: transform 0.2s ease; /* Transition for scaling */
+ 
 }
 
+
 .cardb:hover {
-  backdrop-filter: blur(0px);
-  transform: scale(1.1); /* Scale up on hover */
+  transform: scale(1.03); /* Scale up on hover */
 }
 
 

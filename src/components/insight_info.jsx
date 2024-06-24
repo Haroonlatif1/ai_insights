@@ -13,7 +13,7 @@ const InsightDetails = ({ insights }) => {
   return (
     <div style={{ padding: '20px', textAlign: 'center' }}>
       <img
-        src={insight.imageUrl}
+        src={"/"+ insight.imageUrl}
         alt= "Not available"
         style={{ width: '90%', margin: '20px 0', borderRadius: '10px' }}
       />
@@ -25,7 +25,7 @@ const InsightDetails = ({ insights }) => {
       <motion.p initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }} style={{ color: 'gold', fontSize: '18px', lineHeight: '1.6' }}>{insight.summary}</motion.p>
-      <h4 style={{ color: '#fff', margin: '10px 0' }}>business advice</h4>
+      <h4 style={{ color: '#fff', margin: '10px 0' }}>Business advice</h4>
       <motion.p initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }} style={{ color: 'gold', fontSize: '18px', lineHeight: '1.6' }}>{insight.business_advice}</motion.p>

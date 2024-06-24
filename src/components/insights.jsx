@@ -72,7 +72,6 @@ const App = () => {
             path="/insight/:index"
             element={
               <>
-                {" "}
                 <InsightDetails insights={insights} />
               </>
             }
